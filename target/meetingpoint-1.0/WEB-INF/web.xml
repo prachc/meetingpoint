@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <servlet>
+    <servlet-name>test</servlet-name>
+    <servlet-class>TestJetty</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>test</servlet-name>
+    <url-pattern>/test/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>register</servlet-name>
+    <servlet-class>MeetingPointRegistration</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>register</servlet-name>
+    <url-pattern>/register/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>confirm</servlet-name>
+    <servlet-class>MeetingPointConfirmation</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>confirm</servlet-name>
+    <url-pattern>/confirm/*</url-pattern>
+  </servlet-mapping>
+
+</web-app>
